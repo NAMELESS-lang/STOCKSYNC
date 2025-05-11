@@ -1,0 +1,13 @@
+<mxfile host="Electron" agent="Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/27.0.2 Chrome/134.0.6998.205 Electron/35.3.0 Safari/537.36" version="27.0.2">
+  <diagram name="Página-1" id="RS41pV3_p1BbLn0750I0">
+    <mxGraphModel dx="1755" dy="1643" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="0" pageScale="1" pageWidth="900" pageHeight="1600" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="PWAJvHcHXqJJ09A6mVti-24" value="&lt;p style=&quot;margin:0px;margin-top:4px;text-align:center;&quot;&gt;&lt;b&gt;Item&lt;/b&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot; style=&quot;border-style:solid;&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;String nome_item&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;String data_validade&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;String marca&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;Integer quantidade&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;Float peso&lt;br&gt;String unidade_medida&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;Float valor&lt;/p&gt;&lt;hr size=&quot;1&quot; style=&quot;border-style:solid;&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;Item():&lt;br&gt;Item(String data_validade = null):&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;Getter():&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;Setter():&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;valorToString(): return String (valor+&quot;R$&quot;)&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;&lt;br&gt;&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;&lt;br&gt;&lt;br&gt;&lt;/p&gt;" style="verticalAlign=top;align=left;overflow=fill;html=1;whiteSpace=wrap;labelBackgroundColor=none;fillColor=#182E3E;strokeColor=#FFFFFF;fontColor=#FFFFFF;" vertex="1" parent="1">
+          <mxGeometry x="-205" y="-706" width="402" height="303" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
