@@ -1,0 +1,82 @@
+body{
+    font-size: 16px;
+    margin: 0;
+    padding: 0;
+}
+
+.container{
+    display: flex;
+    justify-content: space-between;
+}
+
+.menu{
+    height: 100vh;
+    width: 15vw;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background-color: #0f5232;
+    border-radius: 5px;
+}
+
+.logo_sistema{
+    margin-top: 3em;
+    height: 150px;
+    width: 150px;
+    border-radius: 80px;
+}
+nav{
+    margin-top: 7em;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    gap: 8em;
+}
+
+nav a{
+    text-decoration: none;
+    color: white;
+    text-align: center;
+}
+
+nav a:hover{
+    text-decoration: underline;
+    transform: scale(1.2);
+}
+
+.inicio{
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.avisos{
+    padding: 2em;
+    display: flex;
+    justify-content: space-around;
+}
+
+.avisos h2{
+    text-align: center;
+}
+
+.avisos p{
+    text-align: center;
+}
+
+.campos_avisos{
+    gap: 1em;
+    display: flex;
+    text-align: center;
+    justify-content: space-around;
+}
+.campos_avisos img{
+    padding-top: 1em;
+    width: 60px;
+    height: 60px;
+}
+
+.campos_avisos article{
+    flex-grow: 1;
+    padding-left: 30px;
+}
