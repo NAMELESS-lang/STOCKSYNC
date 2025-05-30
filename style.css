@@ -1,0 +1,183 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+:root{
+    --label_form: #181C26;
+    --cor_texto_label: whitesmoke;
+    --cor_header: #181C26;
+    --cor_header_texto: whitesmoke;
+    --fonte: "Oswald", sans-serif;
+    --cor_fonte: #F2C791;
+    --cor1: #5BCCD9;
+    --cor2: #F2DB94;
+}
+
+/* barra de navegação */
+.menu {
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15%;
+    position: fixed;
+    flex-direction: column;
+    z-index: 2;
+    height: 100%;
+    background-color: var(--cor_header);
+    height: 100%;
+    width: 15vw;
+}
+
+.menu a {
+    color: var(--cor_texto_label);
+}
+
+
+nav{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    font-family:var(--fonte);
+    font-size: 1.4em;
+}
+nav a{
+    text-decoration: none;
+    color: var(--cor_texto_label);
+}
+
+nav a:hover{
+    text-decoration: underline;
+    color: var(--cor1);
+}
+
+/* Conteúdo principal */
+
+main{
+    position: relative;
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: whitesmoke;
+}
+
+section{
+    height: 80vh;
+    width: 80vw;
+    display: flex;
+    justify-content: space-evenly ;
+    align-items: center;
+}
+
+/* Logo sistema */
+
+section img {
+    width: 400px;
+    height: 400px;
+    border-radius: 100px;
+}
+
+/* Formulário cadastro */
+
+form{
+    box-shadow: 1px 1px 1px 1px var(--cor_header);
+    margin-top: 40%;
+    display: flex;;
+    flex-direction: column;
+    border: 1px solid black;
+    width: 50vh;
+    border-radius: 10px;
+    margin-bottom: 40%;
+}
+
+form h3{
+    text-align: center;
+    font-size: 1.5em;
+    font-family: var(--fonte);
+}
+
+.label1{
+    font: var(--fonte);
+    margin: 10px;
+    background-color: var(--label_form);
+    color: var(--cor1);
+    border-radius: 5px;
+    padding: 10px;
+    font-size: 1.3em;
+    font-family: var(--fonte);
+}
+
+.label2{
+    font-family: var(--fonte);
+    margin: 10px;
+    background-color: var(--label_form);
+    color: var(--cor2);
+    border-radius: 5px;
+    padding: 10px;
+    font-size: 1.3em;
+    font-family: var(--fonte);
+}
+
+form input{
+    margin: 10px;
+    height: 40px;
+}
+
+.input_peso{
+    height: 40px;
+    width: 100px;
+    font-size: 1em;
+}
+
+.input_unidade{
+    height: 40px;
+    width: 70px;
+    font-size: 1em;
+}
+
+
+form input::placeholder{
+    color: black;
+    font-family: var(--fonte);
+    font-size: 1.2em;
+}
+
+form select{
+    font-size: 1.3em;
+    margin: 10px;
+    height: 40px;
+    font-family: var(--fonte);
+}
+
+form div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+form button{
+    height: 30px;
+    margin: 10px;
+    background-color: var(--label_form);
+    color: var(--cor_texto_label);
+    border: none;
+    font-size: 1.3em;
+    color: var(--cor1);
+}
+
+form input[type = "checkbox"]{
+    width: 20px;
+    height: 20px;
+}
+
+form button:hover{
+    color: var(--cor_fonte);
+}

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body id="corpo">
+    <header>
+            <img src="Logo.png" height="100px" width="100px" onclick="abrir_menu()">
+    </header>
+    <main id="main">
+        <section>
+            <img src="Logo.png" alt="">
+            <form action="POST">
+                <h3>Cadastro</h3>
+                <label class="label1" for="nome_item">Nome: </label>
+                <input type="text" placeholder="Nome" required>
+
+                <label class="label2" for="data_validade">Data de validade: </label>
+                <input type="date">
+
+                <label class="label1" for="marca">Marca:</label>
+                <input type="text" required>
+
+                <label class="label2" for="quantidade">Quantidade:</label>
+                <input type="number" required>
+
+                <div class="temos">
+                    <label class="label1" for="">Peso do produto: </label>
+                    <input class="input_peso" type="number" min="1" required>
+
+                    <label class="label1" for="unidade">Unidade</label>
+                    <select class="input_unidade" name="" required>
+                        <option value="Unidade">Un</option>
+                        <option value="Grama">g</option>
+                        <option value="Quilograma">Kg</option>
+                    </select>
+                </div>
+
+                <label class="label2" for="valor">Valor: </label>
+                <input type="number"  min="1" required>
+                
+                <button type="submit">Cadastrar</button>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <p>© 2025 Mioniwatsty tecnology</p>
+    </footer>
+    <script src="cadastro_item.js"></script>
+</body>
+</html>
