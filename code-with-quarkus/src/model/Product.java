@@ -1,7 +1,9 @@
 package model;
 
+import java.sql.SQLException;
+
 public class Product{
-	
+		private String codigo_barra;
 		private String nome_item;
 		private String data_validade;
 		private String marca;
@@ -10,7 +12,8 @@ public class Product{
 		private Double valor;
 	
 	
-		public Product(String nome_item, String data_validade, String marca, Integer quantidade, Peso peso_produto, Double valor) {
+		public Product(String nome_item, String data_validade, String marca, Integer quantidade, Peso peso_produto, Double valor, Conexao_db c, ProductDAO productdao) throws SQLException{
+			this.codigo_barra = criarCodigobarra(c,productdao);
 			this.nome_item = nome_item;
 			this.data_validade = data_validade;
 			this.marca = marca;
@@ -19,7 +22,8 @@ public class Product{
 			this.valor = valor;
 		}
 		
-		public Product(String nome_item, String marca, Integer quantidade, Peso peso_produto, Double valor) {
+		public Product(String nome_item, String marca, Integer quantidade, Peso peso_produto, Double valor,Conexao_db c, ProductDAO productdao) throws SQLException {
+			this.codigo_barra = criarCodigobarra(c,productdao);
 			this.nome_item = nome_item;
 			this.marca = marca;
 			this.quantidade = quantidade;
@@ -34,6 +38,7 @@ public class Product{
 		public void setProduto(Peso peso_produto) { this.peso_produto = peso_produto; }
 		public void setValor(Double valor) { this.valor = valor; }
 		
+		public String getcodigoBarras() {return this.codigo_barra;}
 		public String getnomeItem() { return this.nome_item;}
 		public String getdataValidade() { return this.data_validade;}
 		public String getMarca() { return this.marca;}
@@ -51,6 +56,22 @@ public class Product{
 			return formatado;
 		}
 		
+		public String criarCodigobarra(Conexao_db conexao, ProductDAO productDAO) throws SQLException {
+			String codigo = new String();
+			for(int i = 0; i <5;i++) {
+				codigo += Math.random();
+				if(i == 4) {
+					boolean retorno = productDAO.consultarCodigobarras(conexao, codigo);
+					if(retorno) {
+						return codigo;
+					}else {
+						codigo = "";
+						i = 0;
+					}
+				}
+			}
+			return codigo;
+		}
 		
 		class Peso{
 			private Double valor_peso;
